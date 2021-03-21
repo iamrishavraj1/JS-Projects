@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Light ON / OFF</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+
+<body>
+    <div class="container">
+        <h1 class="heading">ON / OFF</h1>
+        <button  class="onBtn" onclick="document.querySelector('.light-image').src='./images/lightON.png'">Light ON</button>
+        <img class="light-image" src="./images/lightOFF.png" alt="" srcset="">
+        <button class="offBtn" onclick="document.querySelector('.light-image').src='./images/lightOFF.png'">Light OFF</button>
+    </div>
+
+
+
+
+
+
+    
+    <!-- WE CAN ALSO USE THIS METHOD  -->
+    
+    <!-- <script>
+
+        // TAKE A REFERANCE.
+        const onBTN = document.querySelector(".onBtn");
+        const offBTN = document.querySelector(".offBtn");
+
+        //SWITCH ON.
+        const switchLightOn = () => document.querySelector(".light-image").src='./images/lightON.png';
+    
+
+        //SWITCH OFF.
+        const switchLightOff = () => document.querySelector(".light-image").src='./images/lightOFF.png';
+
+
+
+       //ADD EVENTLISTNER "CLICK" ON BUTTONS.
+        onBTN.addEventListner("click",switchLightOn);
+        offBTN.addEventListner("click",switchLightOff);
+       
+
+       //CALL THE FUNCTION
+       switchLight();
+    </script> -->
+</body>
+</html>
